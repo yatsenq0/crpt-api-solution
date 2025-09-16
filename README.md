@@ -79,17 +79,17 @@ This project is a Java 11 implementation of the `CrptApi` class as specified in 
     }
     ```
 
-## 🧠 Implementation Details
+## Implementation Details
 
 *   **Rate Limiting**: The current implementation uses a `java.util.concurrent.Semaphore` combined with a `ScheduledExecutorService`. The semaphore's permits are replenished to the `requestLimit` value every `timeUnit`. This is a simple, working approach. For production-grade applications, libraries like Guava's `RateLimiter` are recommended for more precise control.
 *   **HTTP Client**: Uses the built-in `java.net.http.HttpClient` available since Java 11.
 *   **JSON Handling**: Uses the Jackson library (`com.fasterxml.jackson`) for serializing Java objects to JSON and vice versa.
 *   **Authentication**: The `setAuthToken` method must be called with a valid token obtained from the API's `/auth/cert/` endpoint before calling `createDocument`.
 
-## 📦 Dependencies
+##  Dependencies
 
 This project relies on the [Jackson](https://github.com/FasterXML/jackson) library for JSON processing.
 
-## 👤 Author
+## Author
 
 Walentn Yatsenko
