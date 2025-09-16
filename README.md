@@ -2,7 +2,7 @@
 
 This project is a Java 11 implementation of the `CrptApi` class as specified in the test assignment for SELSUP. It provides a thread-safe client for interacting with the Russian "Честный знак" (Honest Sign) marking system API, featuring built-in rate limiting.
 
-## 📌 Key Features
+## Key Features
 
 *   **Thread-Safety**: The class is designed to be safely used by multiple threads concurrently.
 *   **Rate Limiting**: Implements a request rate limiter as specified in the constructor (`TimeUnit`, `requestLimit`). Requests are blocked if the limit is exceeded until the next time window opens.
@@ -10,12 +10,12 @@ This project is a Java 11 implementation of the `CrptApi` class as specified in 
 *   **Extensible Design**: The architecture is structured to allow easy addition of new API methods in the future.
 *   **Self-Contained**: All necessary data structures are implemented as nested static classes within `CrptApi.java`.
 
-## 🛠️ Requirements
+## Requirements
 
 *   **Java Development Kit (JDK)**: Version 11 or higher.
 *   **Apache Maven**: For dependency management and building the project.
 
-## 🚀 How to Use
+## How to Use
 
 1.  **Build the Project**:
     Open a terminal in the project's root directory and run:
