@@ -92,4 +92,4 @@ This project relies on the [Jackson](https://github.com/FasterXML/jackson) libra
 
 ## Author
 
-Walentn Yatsenko
+Walentin Yatsenko
